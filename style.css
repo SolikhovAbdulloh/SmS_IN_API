@@ -27,7 +27,16 @@ body {
   
     margin-bottom: 10px;
 }
-
+p{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .chat-box p {
     margin: 5px 0; 
 }
