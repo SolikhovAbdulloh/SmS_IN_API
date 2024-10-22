@@ -1,17 +1,21 @@
 {
   "Users": [
     {
-      "text": "Assalomu alekom"
+      "user1": "Assalomu alekom",
+      "id": "cf2b"
     },
     {
-      "text": "Voalekum assalom"
+      "user2": "Voalekum assalom",
+      "id": "c9d4"
     },
     {
-      "text": "Ismingiz"
+      "user1": "Ismingiz",
+      "id": "f5a1"
     },
     {
-      "text": "Familyangiz"
+      "user2": "Abdulloh",
+      "id": "8f2a"
     }
-    
+
   ]
 }
