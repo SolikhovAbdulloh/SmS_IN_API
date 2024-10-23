@@ -15,7 +15,7 @@ const chatOynasi2 = document.getElementById("chat-oynasi2");
 const modal = document.getElementById("modal");
 const modalText = document.getElementById("modal-text");
 const span = document.getElementsByClassName("close")[0];
-let currentMessage = null; 
+let bosh = null; 
 
 function AddUI(data) {
   data.forEach((e) => {
@@ -63,16 +63,13 @@ span.addEventListener('click', () => {
   modal.style.display = "none";
 });
 
-document.getElementById('edit').addEventListener('click',()=>{
-  newmassege = alert("O'zgartirish",currentMessage)
-
-  if(newmassege){
-    currentMessage.textContent = newmassege
-    console.log(currentMessage);
-    
+document.getElementById("edit").addEventListener("click", function () {
+  let newText = prompt("Yangi matnni kiriting:", currentMessage.textContent);
+  if (newText) {
+    currentMessage.textContent = newText;
   }
-  modal.style.display = 'none'
-})
+  modal.style.display = "none";
+});
 
 document.getElementById("delete").addEventListener("click", function () {
   currentMessage.remove();
