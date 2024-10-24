@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contiener{
+    margin: 0 auto;
+    padding: 20px 40px;
+    max-width: 1440px;
+}
+
+body{
+    background-image: url("https://cdn.vectorstock.com/i/1000v/00/80/telegram-application-3d-icon-on-blue-background-vector-50020080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    
+}
+.btn{
+    width: 80%;
+    height: 50px;
+    background-color:gray;
+    color: black;
+    border-radius: 8px;
+    
+}
+
+.contiener div{
+    margin: 0 auto;
+    margin-top: 10%;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.chat-box {
+    width: 45%;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
