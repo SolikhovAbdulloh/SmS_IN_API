@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/register/css/output.css">
+</head>
+<body>
+    <header>
+        <div class="contiener">
+            <h1 class="text-center flex justify-center items-center font-light text-blue-800 ">Registiration</h1>
+            <form>
+
+                    <label for="Phone">Phone</label>
+                    <input type="tel" value="+998 "  >
+                
+
+                    <label  for="Password">Password</label>
+                    <input  type="password" placeholder="1234">
+                <button>Send</button>
+            </form>
+
+        <script>
+
+                 
+        function checkPassword(event){
+
+            event.preventDefault(); 
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+
+            if (password === '1234') { 
+                localStorage.setItem('phone', phone);
+                window.location.href = "./index.html"; 
+            } else {
+                alert('Parol xato!');
+            }
+        }
+    
+            </script>
+
+        </div>
+    </header>
+</body>
+</html>

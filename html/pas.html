@@ -19,8 +19,8 @@
     const btn = document.getElementById('btn')
     const input = document.getElementById('inp')
     btn.addEventListener('click', () => {
-        if (+input.value === 12345) {
-            window.location.href = 'index.html'
+        if (parseInt(input.value) === 12345) {
+            window.location.href = "/html/index.html"
         } else {
             alert('Parol noto\'g\'ri')
         }
