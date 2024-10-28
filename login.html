@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <label for="tel">Telefon raqam:</label>
+        <input type="text" id="tel" placeholder="Telefon raqam kiriting" />
+
+        <label for="parol">Parol:</label>
+        <input type="password" id="parol" placeholder="Parol kiriting" />
+
+        <button onclick="login()">Kirish</button>
+    </div>
+
+    <script>
+        function login() {
+            const tel = document.getElementById('tel').value.trim();
+            const parol = document.getElementById('parol').value.trim();
+
+            if (tel === "1234567890" && parol === "password") {
+                window.location.href = "index.html"; 
+            } else {
+                alert("Telefon raqam yoki parol xato!");
+            }
+        }
+    </script>
+</body>
+</html>

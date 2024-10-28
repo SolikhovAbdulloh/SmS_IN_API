@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="contiener">
-            <h1 class="text-center flex justify-center items-center font-light text-blue-800">Registiration</h1>
+            <h1 class="text-center flex justify-center items-center font-light text-blue-800">Registration</h1>
             <form onsubmit="checkPassword(event)">
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" value="+998">
@@ -30,7 +30,7 @@
 
             if (password === '1234') { 
                 localStorage.setItem('phone', phone);
-                window.location.href = ".index.html"; 
+                window.location.href = "index.html"; // '.index.html' ni 'index.html' ga almashtirdik
             } else {
                 alert('Parol xato!');
             }
@@ -38,3 +38,4 @@
     </script>
 </body>
 </html>
+
